@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario de contacto para pilotos y aliados.">
+  <title>Contacto</title>
+  <!--Inge le quise agregar css para que se vea bonito proximamente--><!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header role="banner">
+    <div class="container">
+      <img src="assets/logo.svg" alt="Logo de Agriwave" style="height:56px">
+      <h1>Agriwave</h1>
+      <p class="meta">Plataforma modular para gestión ganadera, con soporte sin conexión</p>
+    </div>
+  </header>
+  
+<nav aria-label="Navegación principal" class="container" role="navigation">
+  <a href="index.html">Inicio</a>
+  <a href="contexto.html">Contexto</a>
+  <a href="solucion.html">Solución</a>
+  <a href="funcionalidades.html">Funcionalidades</a>
+  <a href="arquitectura.html">Arquitectura</a>
+  <a href="cronograma.html">Cronograma</a>
+  <a href="equipo.html">Equipo</a>
+  <a href="presupuesto.html">Presupuesto</a>
+  <a href="impacto.html">Impacto</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+  <main id="contenido" class="container" role="main">
+    
+<section aria-labelledby="contacto">
+  <h2 id="contacto">Contacto</h2>
+  <p>¿Quieres participar como piloto, proveedor o aliado? Escríbenos.</p>
+  <form action="gracias.html" method="get" aria-describedby="ayuda-form">
+    <p id="ayuda-form" class="meta">Los campos marcados con <span class="required">*</span> son obligatorios.</p>
+
+    <label for="nombre">Nombre <span class="required">*</span></label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+    <label for="correo">Correo electrónico <span class="required">*</span></label>
+    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+    <label for="rol">Rol</label>
+    <select id="rol" name="rol">
+      <option value="ganadero" selected>Ganadero/a</option>
+      <option value="veterinario">Veterinario/a</option>
+      <option value="productor">Productor/a</option>
+      <option value="aliado">Aliado/Proveedor</option>
+    </select>
+
+    <label for="telefono">Teléfono</label>
+    <input type="number" id="telefono" name="telefono" placeholder="Ej. 3001234567">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+
+    <div style="margin-top:1rem">
+      <button type="submit" name="enviar" value="true">Enviar</button>
+    </div>
+  </form>
+</section>
+
+<aside aria-label="Consejos de uso">
+  <h2>Consejos</h2>
+  <ul>
+    <li>Describe tu infraestructura y procesos actuales.</li>
+    <li>Indica si necesitas trabajar sin conexión.</li>
+    <li>Cuéntanos qué métricas te gustaría ver en reportes.</li>
+  </ul>
+</aside>
+
+  </main>
+  
+<footer role="contentinfo">
+  <div class="container">
+    <p>&copy; 2025 Agriwave — Tu finca en la nube. <a href="docs/Documentacion.html" style="color:#d1fae5">Documentación</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

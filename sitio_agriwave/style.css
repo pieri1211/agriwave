@@ -1,0 +1,152 @@
+
+:root {
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    line-height: 1.6;
+}
+
+/* Reset y utilidades básicas */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+/* Estructura principal */
+header, nav, main, section, article, aside, footer {
+    padding: 1rem;
+}
+header {
+    background: #14532d;
+    color: #ecfdf5;
+}
+footer {
+    background: #065f46;
+    color: #ecfdf5;
+    text-align: center;
+}
+
+/* Navegación */
+nav a {
+    margin-right: .75rem;
+    text-decoration: none;
+    color: #065f46;
+}
+nav a:focus,
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedores y grids */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.kpis {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+/* Tarjetas y elementos visuales */
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.kpis .card strong {
+    display: block;
+    font-size: 1.4rem;
+}
+
+/* Tipografía */
+h1 {
+    font-size: 2rem;
+    margin: .2rem 0 1rem;
+}
+h2 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0 .6rem;
+}
+h3 {
+    font-size: 1.15rem;
+    margin: 1rem 0 .4rem;
+}
+.meta {
+    color: #4b5563;
+    font-size: .95rem;
+}
+.breadcrumbs {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+/* Formularios */
+label {
+    display: block;
+    margin: .6rem 0 .2rem;
+}
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: .6rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+button {
+    cursor: pointer;
+    background: #10b981;
+    color: white;
+    border: none;
+}
+button:hover,
+button:focus {
+    filter: brightness(1.1);
+}
+.required {
+    color: #b91c1c;
+}
+
+/* Imágenes y figuras */
+figure { margin: 0; }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Accesibilidad */
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: .5rem;
+    background: #fffa;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: .2rem .5rem;
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    border-radius: 999px;
+    font-size: .8rem;
+}
